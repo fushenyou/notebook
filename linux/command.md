@@ -278,7 +278,7 @@ LAST_ACK 4 等待原来的发向远程TCP的连接中断请求的确认
 
 ## 列出耗时超过 10 秒的请求以及对应请求发生的次数
 
--   cat access.log |awk -F '|' '($5 > 10){print $4}' |sort -n|uniq -c|sort -nr|head -100
+-   cat access.log |awk -F '|' '($5 > 10){print $4}' |sort -n|uniq -c|sort -nr|head -n 100
 
 ## 统计网站流量（G)
 
@@ -290,4 +290,4 @@ LAST_ACK 4 等待原来的发向远程TCP的连接中断请求的确认
 
 ## 查询某个时间段的日志
 
--   grep -E '12/Jul/2018:15:[00-59]' access.log
+-   grep -E '12/Jul/2018:15:[0-5][0-9]' access.log
