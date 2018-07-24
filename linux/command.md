@@ -1,6 +1,6 @@
-#安装 nginx naxis
+# 安装 nginx naxis
 
-##解压 nginx-1.10.2.tar.gz
+## 解压 nginx-1.10.2.tar.gz
 
 -   命令格式：tar zxvf 压缩文件名.tar.gz
 -   tar zxvf nginx-1.10.2.tar.gz ##解压 naxis 0.55.3.tar.gz
@@ -23,7 +23,7 @@ ls /lib64/ | grep pcre
 ln -s /lib64/libpcre.so.0.0.1 /lib64/libpcre.so.1
 ```
 
-##配置 nginx naxis
+## 配置 nginx naxis
 
 ```
 http {
@@ -56,7 +56,7 @@ http {
   }
  }
 ```
-
+```
 #Enable naxsi
 SecRulesEnabled;
 #Enable learning mode
@@ -71,7 +71,7 @@ CheckRule "$EVADE >= 4" BLOCK;
 #CheckRule "$XSS >= 8" BLOCK;
 #naxsi logs goes there
 error_log /usr/local/nginx-1.10.2/logs/denied.log;
-
+```
 # linux 常用命令
 
 ###查看系统参数
